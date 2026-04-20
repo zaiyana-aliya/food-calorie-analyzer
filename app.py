@@ -61,4 +61,4 @@ def analyze():
         return jsonify({"result": f"❌ '{food}' not found. Try searching with simpler terms like 'banana', 'chicken', 'rice'", "found": False})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
